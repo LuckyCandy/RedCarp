@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* -------------------着陆页-------------------*/
+Route::get('/', "LandingController@index");                              //首页
+Route::get('/about', "LandingController@about");                         //关于
+Route::get('/manual', "LandingController@manual");                       //使用说明
+Route::get('/protocol', "LandingController@protocol");                       //用户协议
